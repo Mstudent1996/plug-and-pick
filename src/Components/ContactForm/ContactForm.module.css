@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    color: black;
+    font-family: 'raleway';
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    background: rgba(21, 107, 103, 0.54);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    padding: 20px;
+    color: black;
+}
+
+.input {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.textarea {
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+}
+
+.button {
+    background-color: #EBDEA4;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: #D2AC36;
+}
+
+@media (max-width:768px) {
+    .form {
+        width: 100%;
+    }
+}

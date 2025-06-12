@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    padding: 40px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+.columns {
+  display: flex;
+  gap: 30px;
+  background: rgba(102, 192, 188, 0.57);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+  
+.products {
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6);
+}
+  
+.productCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #166C68;
+  color: white;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  flex-wrap: wrap; 
+}
+  
+  
+.productCard img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+  
+.removeButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+  
+.form {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+}
+  
+.form label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+  
+.form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+  
+.button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+  
+.button:hover {
+  background-color: #444;
+}
+  
+@media (max-width:768px) {
+  .columns {
+    display: flex;
+    flex-direction: column;
+  }
+}

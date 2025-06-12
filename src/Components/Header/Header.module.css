@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.infoBox {
+    background-color: #66C0BC;
+    width: 100vw;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.infoText {
+    margin-left: 55px;
+    font-family: 'roboto slab';
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    background-color: #156B67;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'roboto slab';
+}
+
+
+.desktopNav {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.link:hover, .link:active {
+    border-bottom: 2px solid #EBDEA4;
+    color: #EBDEA4;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.cartIcon {
+    color: white;
+    margin-right: 10px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.cartIcon:hover {
+    color: #EBDEA4;
+}
+
+.favIcon {
+    font-size: 40px;
+    color: white;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.favIcon:hover {
+    color: #EBDEA4;
+}
+
+.burgerIcon {
+    display: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(28, 28, 28, 0.98);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3 ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.mobileNav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.mobileLink {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.2s ease;
+}
+
+.mobileLink:hover, .mobileLink:active {
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {    
+    .desktopNav {
+        display: none;
+    }
+    
+    .burgerIcon {
+        display: block;
+    }
+    
+    .icons {
+        display: flex;
+    }
+
+    .infoText {
+        margin: 0;
+    }
+}
+
+@media (min-width:993px) {
+    .burgerIcon {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+}

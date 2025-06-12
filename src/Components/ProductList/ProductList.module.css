@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 90%;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+    background: rgba(21, 107, 103, 0.52);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+}
+
+.productCard {
+    position: relative;
+    background-color: #156B67;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.content {
+    background-color: #66C0BC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: 200px;
+}
+
+.contentBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 100%;
+    background-color: #66C0BC;
+    align-items: self-end;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.discountBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #7A1877;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+
+.favBtn {
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    background: none;
+    border: none;
+    color: #7A1877;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.favBtn:focus, .cartBtn:focus, .detailsBtn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.detailsBtn {
+    background: rgba(21, 107, 103, 0.59);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(21, 107, 103, 0.4);
+    height: 50px;
+}
+
+.cartBtn {
+    background: rgba(122, 24, 119, 0.59);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(122, 24, 119, 0.4);
+    height: 50px;
+}

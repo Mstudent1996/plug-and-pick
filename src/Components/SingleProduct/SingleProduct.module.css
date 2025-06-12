@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .productContainer {
+    padding: 40px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .productCard {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    color: black;
+  }
+  
+  .productImg {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .favBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #7A1877;
+    cursor: pointer;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+  }
+  
+  .content p {
+    margin: 4px 0;
+  }
+  
+  .priceContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .priceContainer b {
+    font-size: 1.6rem;
+  }
+  
+  .discountBadge {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .addToCart {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .addToCart:hover {
+    background-color: darkmagenta;
+  }
+  
+  .productInfoContainer {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .productInfoContainer p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+  }
+
+@media (max-width:768px) {
+  .productCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+  }
+}

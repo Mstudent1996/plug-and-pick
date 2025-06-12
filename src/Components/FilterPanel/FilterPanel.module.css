@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.filterPanel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+.sorting,
+.searchBar,
+.categories {
+  min-width: 200px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #333;
+  color: white;
+  background: rgba(102, 192, 188, 0.53);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(102, 192, 188, 0.3);
+  color: black;
+}
+
+
+.sortingContainer {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.sorting {
+    padding: 5px;
+}

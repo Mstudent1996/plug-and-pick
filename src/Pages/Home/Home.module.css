@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.heroImg {
+    width: 100%;
+    max-width: 100%;
+    height: 85vh;
+    display: block;
+    object-fit: cover;
+}
+
+.heroBox {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(102, 192, 188, 0.72);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(102, 192, 188, 0.32);
+} 
+
+.heroButton {
+    background-color: #7A1877;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.heroButton:hover {
+    background-color: #EBDEA4;
+    color: black;
+}
+
+.extraInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.featuredContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.h2 {
+    font-family: 'oxygen';
+}
+
+.topProducts {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background: rgba(235, 222, 164, 0.43);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(235, 222, 164, 0.34);
+    width: 90%;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+
+.productCard {
+    position: relative;
+    background-color: #156B67;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 300px;
+    border: 1px solid white;
+}
+
+.content {
+    background-color: #66C0BC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: 200px;
+}
+
+.contentBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 100%;
+    background-color: #66C0BC;
+    align-items: end;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.discountBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #7A1877;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+
+.favBtn {
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    background: none;
+    border: none;
+    color: #7A1877;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.favBtn:focus, .cartBtn:focus, .detailsBtn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.detailsBtn {
+    background: rgba(21, 107, 103, 0.59);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: none;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.cartBtn {
+    background: rgba(122, 24, 119, 0.59);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: none;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsBtn:hover, .cartBtn:hover {
+    border: none;
+    background-color: #D2AC36
+}
+
+.categories {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoryContainer {
+    background: rgba(204, 204, 204, 0.61);
+    border-radius: 16px;
+    box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(102, 192, 188, 0.45);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px;
+    justify-content: center;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.mens-shirts, .mens-shoes, .womens-shoes, .tops {
+    background-color: #D2AC36;
+}
+
+.mens-shirts:hover, .mens-shoes:hover, .womens-shoes:hover, .tops:hover {
+    background-color: #b99b18;
+    color: black;
+}
+
+.beauty, .fragrances, .skin-care, .womens-jewellery {
+    background-color: #EBA4DE;
+}
+
+.beauty:hover, .fragrances:hover, .skin-care:hover, .womens-jewellery:hover {
+    background-color: #fa80e4;
+    color: black;
+}
+
+.furniture, .home-decoration, .kitchen-accessories, .groceries  {
+    background-color: #156B67;
+}
+
+.furniture:hover, .home-decoration:hover, .kitchen-accessories:hover, .groceries:hover  {
+    background-color: #1fbdb5;
+    color: black;
+}
+
+.laptops, .tablets, .smartphones, .mobile-accessories {
+    background-color: #7A1877; 
+}
+
+.laptops:hover, .tablets:hover, .smartphones:hover, .mobile-accessories:hover {
+    background-color: #b62ab1; 
+    color: black;
+}
+
+.womens-bags, .womens-dresses, .womens-watches, .mens-watches {
+    background-color: #66C0BC;
+}
+
+.womens-bags:hover, .womens-dresses:hover, .womens-watches:hover, .mens-watches:hover {
+    background-color: #65f4ed;
+    color: black;
+}
+
+.motorcycle, .vehicle, .sunglasses, .sports-accessories{
+    background-color: #EBDEA4;
+}
+
+.motorcycle:hover, .vehicle:hover, .sunglasses:hover, .sports-accessories:hover {
+    background-color: #f3c334;
+    color: black;
+}
+
+.categoryCard {
+    padding: 20px;
+    color: white;
+    transition: 0.3s;
+    width: 210px;
+    height: 100px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.cta {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.shopBtn {
+    width: 200px;
+    background-color: #D2AC36;
+    transition: 0.5s ease-in-out;
+    border: none;
+}
+
+.shopBtn:hover {
+    border: none;
+    background-color: #EBDEA4;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .heroBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
