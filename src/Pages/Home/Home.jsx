@@ -38,9 +38,9 @@ export default function Home() {
 
   useEffect(() => { // Starter en useefect for at hente produkter
     fetch("https://dummyjson.com/products") // Fetcher produktdata fra API
-      .then((res) => res.json()) // Parser JSON-svaret
+      .then((res) => res.json()) // Konverterer til JSON
       .then((data) => {
-        const shuffled = data.products.sort(() => 0.5 - Math.random()); // Laver et tilfældigt udvalg af produkter. Det er en random sort operatorer der retunere et tal mellem -0.5-+0.5. Sort kan så sammenligne de to elementer og giver et tilfældigt resultat
+        const shuffled = data.products.sort(() => 0.5 - Math.random()); // Laver et tilfældigt udvalg af produkter. Det er en random sort operatorer der retunere et tal mellem -0.5-+0.5 og Math.Random et tal mellem 0-1. Sort kan så sammenligne de to elementer og giver et tilfældigt resultat
         setProducts(shuffled.slice(0, 4)); // Viser de første 4 produkter i state
       });
 
@@ -159,7 +159,7 @@ export default function Home() {
                       </Link>
                       {/* Tilføj eller fjern fra kurv */}
                       <button
-                        className={styles.cartBtn} // Knap til at tilføje/fjerne produktet fra kurv
+                        className={styles.cartBtn} 
                         onClick={() => toggleCart(product)}
                       >
                         {cart.some((item) => item.id === product.id) ? (
@@ -180,7 +180,7 @@ export default function Home() {
       <div className={styles.categories}>
         <h2>Shop by category</h2>
         <div className={styles.categoryContainer}>
-          {/* Gennemgår hvert element i categoris-arrayet */}
+          {/* Gennemgår hvert element i category-arrayet */}
           {categories.map((category) => (
             /* Der linkes til de enkelte kategorier så kun produkterne i den kategori vises */
             <Link

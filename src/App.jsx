@@ -1,18 +1,18 @@
-import Header from "./Components/Header/Header"; // Importerer header funktionalitet
+import Header from "./components/Header/Header"; // Importerer header funktionalitet
 import { Routes, Route } from 'react-router-dom' // Importerer routes og route der bruges til at håndtere url-ruter
 import styles from './App.module.css' // Importerer css
-import Home from './Pages/Home/Home' // Importerer Home page til brug i navigation
-import Products from './Pages/Products/Products'
-import Contact from './Pages/Contact/Contact'
-import SingleProduct from './Components/SingleProduct/SingleProduct'
-import CategoryPage from './Pages/CategoryPage/CategoryPage'
-import Footer from './Components/Footer/Footer'
-import Cart from './Pages/Cart/Cart'
-import Cookies from './Components/Cookies/Cookies'
-import Terms from "./Pages/Documents/Terms"
-import CookiePolicy from "./Pages/Documents/CookiePolicy"
-import PrivacyPolicy from "./Pages/Documents/PrivacyPolicy"
-import Favorites from './Pages/Favorites/Favorites'
+import Home from './pages/Home/Home' // Importerer Home page til brug i navigation
+import Products from './pages/Products/Products'
+import Contact from './pages/Contact/Contact'
+import SingleProduct from './components/SingleProduct/SingleProduct'
+import CategoryPage from './pages/CategoryPage/CategoryPage'
+import Footer from './components/Footer/Footer'
+import Cart from './pages/Cart/Cart'
+import Cookies from './components/Cookies/Cookies'
+import Terms from "./pages/Documents/Terms"
+import CookiePolicy from "./pages/Documents/CookiePolicy"
+import PrivacyPolicy from "./pages/Documents/PrivacyPolicy"
+import Favorites from './pages/Favorites/Favorites'
 
 export default function App() { // Starter en react komponent og eksporterer den
 return (
