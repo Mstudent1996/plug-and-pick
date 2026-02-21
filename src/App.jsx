@@ -1,5 +1,5 @@
 import Header from "./Components/Header/Header.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import styles from "./App.module.css";
 
 import Home from "./Pages/Home/Home.jsx";
@@ -17,7 +17,6 @@ import Favorites from "./Pages/Favorites/Favorites.jsx";
 
 export default function App() {
   return (
-    <BrowserRouter>
       <div className={styles.container}>
         <Header />
         <Cookies />
@@ -42,6 +41,5 @@ export default function App() {
 
         <Footer />
       </div>
-    </BrowserRouter>
   );
 }
