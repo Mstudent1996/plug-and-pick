@@ -1,19 +1,19 @@
-import Header from "./components/Header/Header";
+import Header from "./components/Header/Header.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styles from "./App.module.css";
 
-import Home from "./pages/Home/Home";
-import Products from "./pages/Products/Products";
-import Contact from "./pages/Contact/Contact";
-import SingleProduct from "./components/SingleProduct/SingleProduct";
-import CategoryPage from "./pages/CategoryPage/CategoryPage";
-import Footer from "./components/Footer/Footer";
-import Cart from "./pages/Cart/Cart";
-import Cookies from "./components/Cookies/Cookies";
-import Terms from "./pages/Documents/Terms";
-import CookiePolicy from "./pages/Documents/CookiePolicy";
-import PrivacyPolicy from "./pages/Documents/PrivacyPolicy";
-import Favorites from "./pages/Favorites/Favorites";
+import Home from "./pages/Home/Home.jsx";
+import Products from "./pages/Products/Products.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import SingleProduct from "./components/SingleProduct/SingleProduct.jsx";
+import CategoryPage from "./pages/CategoryPage/CategoryPage.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Cart from "./pages/Cart/Cart.jsx";
+import Cookies from "./components/Cookies/Cookies.jsx";
+import Terms from "./pages/Documents/Terms.jsx";
+import CookiePolicy from "./pages/Documents/CookiePolicy.jsx";
+import PrivacyPolicy from "./pages/Documents/PrivacyPolicy.jsx";
+import Favorites from "./pages/Favorites/Favorites.jsx";
 
 export default function App() {
   return (
